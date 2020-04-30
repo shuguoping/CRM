@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -13,8 +12,10 @@ import com.alibaba.fastjson.JSONObject;
 import com.shu.crm.entity.PageBean;
 import com.shu.crm.entity.User;
 import com.shu.crm.service.UserService;
+import com.shu.crm.utils.MD5Util;
 import com.shu.crm.utils.ResponseUtil;
 import com.shu.crm.utils.StringUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -29,7 +30,7 @@ import net.sf.json.JSONArray;
 @RequestMapping("/user")
 public class UserController {
 
-	@Resource
+	@Autowired
 	private UserService userService;
 
 	/**
@@ -41,7 +42,10 @@ public class UserController {
 	 */
 	@RequestMapping("/login")
 	public String login(User user,HttpServletRequest request)throws Exception{
+
+		user.setPassword(MD5Util.getMD5String(user.getPassword()));
 		User resultUser=userService.login(user);
+		System.out.println("========");
 		if(resultUser==null){
 			request.setAttribute("user", user);
 			request.setAttribute("errorMsg", "用户名或密码错误！");
@@ -49,7 +53,7 @@ public class UserController {
 		}else{
 			HttpSession session=request.getSession();
 			session.setAttribute("currentUser", resultUser);
-			return "redirect:/main.jsp";
+			return "main";
 		}
 	}
 

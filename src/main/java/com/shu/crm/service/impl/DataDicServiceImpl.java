@@ -5,7 +5,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import com.shu.crm.dao.DataDicDao;
+import com.shu.crm.mappers.DataDicMapper;
 import com.shu.crm.entity.DataDic;
 import com.shu.crm.service.DataDicService;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 public class DataDicServiceImpl implements DataDicService {
 
 	@Resource
-	private DataDicDao dataDicDao;
+	private DataDicMapper dataDicDao;
 
 	@Override
 	public List<DataDic> find(Map<String, Object> map) {

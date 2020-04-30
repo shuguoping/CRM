@@ -5,7 +5,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import com.shu.crm.dao.CustomerReprieveDao;
+import com.shu.crm.mappers.CustomerReprieveMapper;
 import com.shu.crm.entity.CustomerReprieve;
 import com.shu.crm.service.CustomerReprieveService;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 public class CustomerReprieveServiceImpl implements CustomerReprieveService {
 
 	@Resource
-	private CustomerReprieveDao customerReprieveDao;
+	private CustomerReprieveMapper customerReprieveDao;
     @Override
     public List<CustomerReprieve> find(Map<String, Object> map) {
         return customerReprieveDao.find(map);

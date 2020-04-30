@@ -5,7 +5,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import com.shu.crm.dao.OrderDetailsDao;
+import com.shu.crm.mappers.OrderDetailsMapper;
 import com.shu.crm.entity.OrderDetails;
 import com.shu.crm.service.OrderDetailsService;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 public class OrderDetailsServiceImpl implements OrderDetailsService {
 
 	@Resource
-	private OrderDetailsDao orderDetailsDao;
+	private OrderDetailsMapper orderDetailsDao;
 
 	@Override
 	public List<OrderDetails> find(Map<String, Object> map) {

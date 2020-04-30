@@ -5,7 +5,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import com.shu.crm.dao.SaleChanceDao;
+import com.shu.crm.mappers.SaleChanceMapper;
 import com.shu.crm.entity.SaleChance;
 import com.shu.crm.service.SaleChanceService;
 import org.springframework.stereotype.Service;
@@ -19,7 +19,7 @@ import org.springframework.stereotype.Service;
 public class SaleChanceServiceImpl implements SaleChanceService {
 
 	@Resource
-	private SaleChanceDao saleChanceDao;
+	private SaleChanceMapper saleChanceDao;
 
 	@Override
 	public List<SaleChance> find(Map<String, Object> map) {

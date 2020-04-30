@@ -5,7 +5,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import com.shu.crm.dao.LinkManDao;
+import com.shu.crm.mappers.LinkManMapper;
 import com.shu.crm.entity.LinkMan;
 import com.shu.crm.service.LinkManService;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 public class LinkManServiceImpl implements LinkManService {
 
 	@Resource
-	private LinkManDao linkManDao;
+	private LinkManMapper linkManDao;
 
 	@Override
 	public List<LinkMan> find(Map<String, Object> map) {

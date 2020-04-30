@@ -5,9 +5,9 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import com.shu.crm.dao.CustomerDao;
-import com.shu.crm.dao.CustomerLossDao;
-import com.shu.crm.dao.OrderDao;
+import com.shu.crm.mappers.CustomerMapper;
+import com.shu.crm.mappers.CustomerLossMapper;
+import com.shu.crm.mappers.OrderMapper;
 import com.shu.crm.entity.*;
 import com.shu.crm.service.CustomerService;
 import org.springframework.stereotype.Service;
@@ -22,13 +22,13 @@ import org.springframework.stereotype.Service;
 public class CustomerServiceImpl implements CustomerService {
 
 	@Resource
-	private CustomerDao customerDao;
+	private CustomerMapper customerDao;
 
 	@Resource
-	private CustomerLossDao customerLossDao;
+	private CustomerLossMapper customerLossDao;
 
 	@Resource
-	private OrderDao orderDao;
+	private OrderMapper orderDao;
 
 	@Override
 	public List<Customer> find(Map<String, Object> map) {

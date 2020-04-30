@@ -5,7 +5,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import com.shu.crm.dao.ProductDao;
+import com.shu.crm.mappers.ProductMapper;
 import com.shu.crm.entity.Product;
 import com.shu.crm.service.ProductService;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 public class ProductServiceImpl implements ProductService {
 
 	@Resource
-	private ProductDao productDao;
+	private ProductMapper productDao;
 
 	@Override
 	public List<Product> find(Map<String, Object> map) {

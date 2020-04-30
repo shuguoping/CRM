@@ -5,7 +5,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import com.shu.crm.dao.CustomerLossDao;
+import com.shu.crm.mappers.CustomerLossMapper;
 import com.shu.crm.entity.CustomerLoss;
 import com.shu.crm.service.CustomerLossService;
 import org.springframework.stereotype.Service;
@@ -19,7 +19,7 @@ import org.springframework.stereotype.Service;
 public class CustomerLossServiceImpl implements CustomerLossService {
 
 	@Resource
-	private CustomerLossDao customerLossDao;
+	private CustomerLossMapper customerLossDao;
 
 	@Override
 	public List<CustomerLoss> find(Map<String, Object> map) {

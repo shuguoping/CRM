@@ -1,0 +1,288 @@
+
+2020-04-29 16:22:15.348[] [SpringContextShutdownHook] [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] 
+INFO : Shutting down ExecutorService 'applicationTaskExecutor'
+
+2020-04-29 16:22:15.357[] [SpringContextShutdownHook] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Shutdown initiated...
+
+2020-04-29 16:22:15.364[] [SpringContextShutdownHook] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Shutdown completed.
+
+2020-04-29 16:22:48.542[] [restartedMain] [com.shu.crm.CrmApplication] 
+INFO : Starting CrmApplication on chanmingdeMacBook-Pro.local with PID 29136 (/Users/chanming/github/CRM/target/classes started by chanming in /Users/chanming/github/CRM)
+
+2020-04-29 16:22:48.543[] [restartedMain] [com.shu.crm.CrmApplication] 
+INFO : The following profiles are active: dev
+
+2020-04-29 16:22:48.591[] [restartedMain] [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] 
+INFO : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+
+2020-04-29 16:22:48.591[] [restartedMain] [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] 
+INFO : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+
+2020-04-29 16:22:49.731[] [restartedMain] [o.s.boot.web.embedded.tomcat.TomcatWebServer] 
+INFO : Tomcat initialized with port(s): 8012 (http)
+
+2020-04-29 16:22:49.741[] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] 
+INFO : Initializing ProtocolHandler ["http-nio-8012"]
+
+2020-04-29 16:22:49.742[] [restartedMain] [org.apache.catalina.core.StandardService] 
+INFO : Starting service [Tomcat]
+
+2020-04-29 16:22:49.742[] [restartedMain] [org.apache.catalina.core.StandardEngine] 
+INFO : Starting Servlet engine: [Apache Tomcat/9.0.33]
+
+2020-04-29 16:22:50.006[] [restartedMain] [org.apache.jasper.servlet.TldScanner] 
+INFO : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2020-04-29 16:22:50.011[] [restartedMain] [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] 
+INFO : Initializing Spring embedded WebApplicationContext
+
+2020-04-29 16:22:50.011[] [restartedMain] [org.springframework.web.context.ContextLoader] 
+INFO : Root WebApplicationContext: initialization completed in 1419 ms
+
+2020-04-29 16:23:10.736[] [restartedMain] [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] 
+INFO : Initializing ExecutorService 'applicationTaskExecutor'
+
+2020-04-29 16:23:11.107[] [restartedMain] [o.s.b.d.autoconfigure.OptionalLiveReloadServer] 
+INFO : LiveReload server is running on port 35729
+
+2020-04-29 16:23:11.133[] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] 
+INFO : Starting ProtocolHandler ["http-nio-8012"]
+
+2020-04-29 16:23:11.168[] [restartedMain] [o.s.boot.web.embedded.tomcat.TomcatWebServer] 
+INFO : Tomcat started on port(s): 8012 (http) with context path ''
+
+2020-04-29 16:23:11.172[] [restartedMain] [com.shu.crm.CrmApplication] 
+INFO : Started CrmApplication in 43.145 seconds (JVM running for 48.838)
+
+2020-04-29 16:26:44.546[] [http-nio-8012-exec-1] [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] 
+INFO : Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2020-04-29 16:26:44.547[] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet] 
+INFO : Initializing Servlet 'dispatcherServlet'
+
+2020-04-29 16:26:44.554[] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet] 
+INFO : Completed initialization in 7 ms
+
+2020-04-29 16:26:49.232[] [http-nio-8012-exec-5] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Starting...
+
+2020-04-29 16:26:49.383[] [http-nio-8012-exec-5] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Start completed.
+
+2020-04-29 16:46:28.271[] [SpringContextShutdownHook] [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] 
+INFO : Shutting down ExecutorService 'applicationTaskExecutor'
+
+2020-04-29 16:46:28.273[] [SpringContextShutdownHook] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Shutdown initiated...
+
+2020-04-29 16:46:28.285[] [SpringContextShutdownHook] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Shutdown completed.
+
+2020-04-29 16:46:57.500[] [restartedMain] [com.shu.crm.CrmApplication] 
+INFO : Starting CrmApplication on chanmingdeMacBook-Pro.local with PID 29209 (/Users/chanming/github/CRM/target/classes started by chanming in /Users/chanming/github/CRM)
+
+2020-04-29 16:46:57.502[] [restartedMain] [com.shu.crm.CrmApplication] 
+INFO : The following profiles are active: dev
+
+2020-04-29 16:46:57.542[] [restartedMain] [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] 
+INFO : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+
+2020-04-29 16:46:57.543[] [restartedMain] [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] 
+INFO : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+
+2020-04-29 16:46:58.490[] [restartedMain] [o.s.boot.web.embedded.tomcat.TomcatWebServer] 
+INFO : Tomcat initialized with port(s): 8012 (http)
+
+2020-04-29 16:46:58.499[] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] 
+INFO : Initializing ProtocolHandler ["http-nio-8012"]
+
+2020-04-29 16:46:58.500[] [restartedMain] [org.apache.catalina.core.StandardService] 
+INFO : Starting service [Tomcat]
+
+2020-04-29 16:46:58.500[] [restartedMain] [org.apache.catalina.core.StandardEngine] 
+INFO : Starting Servlet engine: [Apache Tomcat/9.0.33]
+
+2020-04-29 16:46:58.740[] [restartedMain] [org.apache.jasper.servlet.TldScanner] 
+INFO : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2020-04-29 16:46:58.744[] [restartedMain] [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] 
+INFO : Initializing Spring embedded WebApplicationContext
+
+2020-04-29 16:46:58.744[] [restartedMain] [org.springframework.web.context.ContextLoader] 
+INFO : Root WebApplicationContext: initialization completed in 1201 ms
+
+2020-04-29 16:47:19.393[] [restartedMain] [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] 
+INFO : Initializing ExecutorService 'applicationTaskExecutor'
+
+2020-04-29 16:47:19.750[] [restartedMain] [o.s.b.d.autoconfigure.OptionalLiveReloadServer] 
+INFO : LiveReload server is running on port 35729
+
+2020-04-29 16:47:19.777[] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] 
+INFO : Starting ProtocolHandler ["http-nio-8012"]
+
+2020-04-29 16:47:19.812[] [restartedMain] [o.s.boot.web.embedded.tomcat.TomcatWebServer] 
+INFO : Tomcat started on port(s): 8012 (http) with context path ''
+
+2020-04-29 16:47:19.816[] [restartedMain] [com.shu.crm.CrmApplication] 
+INFO : Started CrmApplication in 42.79 seconds (JVM running for 48.362)
+
+2020-04-29 17:12:20.545[] [http-nio-8012-exec-1] [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] 
+INFO : Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2020-04-29 17:12:20.546[] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet] 
+INFO : Initializing Servlet 'dispatcherServlet'
+
+2020-04-29 17:12:20.553[] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet] 
+INFO : Completed initialization in 7 ms
+
+2020-04-29 17:12:20.657[] [http-nio-8012-exec-1] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Starting...
+
+2020-04-29 17:12:20.781[] [http-nio-8012-exec-1] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Start completed.
+
+2020-04-29 17:19:22.123[] [SpringContextShutdownHook] [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] 
+INFO : Shutting down ExecutorService 'applicationTaskExecutor'
+
+2020-04-29 17:19:22.124[] [SpringContextShutdownHook] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Shutdown initiated...
+
+2020-04-29 17:19:22.134[] [SpringContextShutdownHook] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Shutdown completed.
+
+2020-04-29 17:19:50.072[] [restartedMain] [com.shu.crm.CrmApplication] 
+INFO : Starting CrmApplication on chanmingdeMacBook-Pro.local with PID 29356 (/Users/chanming/github/CRM/target/classes started by chanming in /Users/chanming/github/CRM)
+
+2020-04-29 17:19:50.073[] [restartedMain] [com.shu.crm.CrmApplication] 
+INFO : The following profiles are active: dev
+
+2020-04-29 17:19:50.116[] [restartedMain] [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] 
+INFO : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+
+2020-04-29 17:19:50.116[] [restartedMain] [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] 
+INFO : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+
+2020-04-29 17:19:51.157[] [restartedMain] [o.s.boot.web.embedded.tomcat.TomcatWebServer] 
+INFO : Tomcat initialized with port(s): 8012 (http)
+
+2020-04-29 17:19:51.164[] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] 
+INFO : Initializing ProtocolHandler ["http-nio-8012"]
+
+2020-04-29 17:19:51.165[] [restartedMain] [org.apache.catalina.core.StandardService] 
+INFO : Starting service [Tomcat]
+
+2020-04-29 17:19:51.166[] [restartedMain] [org.apache.catalina.core.StandardEngine] 
+INFO : Starting Servlet engine: [Apache Tomcat/9.0.33]
+
+2020-04-29 17:19:51.427[] [restartedMain] [org.apache.jasper.servlet.TldScanner] 
+INFO : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2020-04-29 17:19:51.431[] [restartedMain] [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] 
+INFO : Initializing Spring embedded WebApplicationContext
+
+2020-04-29 17:19:51.431[] [restartedMain] [org.springframework.web.context.ContextLoader] 
+INFO : Root WebApplicationContext: initialization completed in 1314 ms
+
+2020-04-29 17:20:12.172[] [restartedMain] [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] 
+INFO : Initializing ExecutorService 'applicationTaskExecutor'
+
+2020-04-29 17:20:12.518[] [restartedMain] [o.s.b.d.autoconfigure.OptionalLiveReloadServer] 
+INFO : LiveReload server is running on port 35729
+
+2020-04-29 17:20:12.548[] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] 
+INFO : Starting ProtocolHandler ["http-nio-8012"]
+
+2020-04-29 17:20:12.587[] [restartedMain] [o.s.boot.web.embedded.tomcat.TomcatWebServer] 
+INFO : Tomcat started on port(s): 8012 (http) with context path ''
+
+2020-04-29 17:20:12.592[] [restartedMain] [com.shu.crm.CrmApplication] 
+INFO : Started CrmApplication in 43.005 seconds (JVM running for 48.654)
+
+2020-04-29 17:56:18.755[] [http-nio-8012-exec-1] [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] 
+INFO : Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2020-04-29 17:56:18.756[] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet] 
+INFO : Initializing Servlet 'dispatcherServlet'
+
+2020-04-29 17:56:18.761[] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet] 
+INFO : Completed initialization in 5 ms
+
+2020-04-29 17:56:18.860[] [http-nio-8012-exec-1] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Starting...
+
+2020-04-29 17:56:18.973[] [http-nio-8012-exec-1] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Start completed.
+
+2020-04-29 18:00:56.131[] [SpringContextShutdownHook] [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] 
+INFO : Shutting down ExecutorService 'applicationTaskExecutor'
+
+2020-04-29 18:00:56.133[] [SpringContextShutdownHook] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Shutdown initiated...
+
+2020-04-29 18:00:56.141[] [SpringContextShutdownHook] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Shutdown completed.
+
+2020-04-29 18:01:31.885[] [restartedMain] [com.shu.crm.CrmApplication] 
+INFO : Starting CrmApplication on chanmingdeMacBook-Pro.local with PID 29576 (/Users/chanming/github/CRM/target/classes started by chanming in /Users/chanming/github/CRM)
+
+2020-04-29 18:01:31.887[] [restartedMain] [com.shu.crm.CrmApplication] 
+INFO : The following profiles are active: dev
+
+2020-04-29 18:01:31.928[] [restartedMain] [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] 
+INFO : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+
+2020-04-29 18:01:31.929[] [restartedMain] [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] 
+INFO : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+
+2020-04-29 18:01:33.028[] [restartedMain] [o.s.boot.web.embedded.tomcat.TomcatWebServer] 
+INFO : Tomcat initialized with port(s): 8012 (http)
+
+2020-04-29 18:01:33.037[] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] 
+INFO : Initializing ProtocolHandler ["http-nio-8012"]
+
+2020-04-29 18:01:33.038[] [restartedMain] [org.apache.catalina.core.StandardService] 
+INFO : Starting service [Tomcat]
+
+2020-04-29 18:01:33.038[] [restartedMain] [org.apache.catalina.core.StandardEngine] 
+INFO : Starting Servlet engine: [Apache Tomcat/9.0.33]
+
+2020-04-29 18:01:33.290[] [restartedMain] [org.apache.jasper.servlet.TldScanner] 
+INFO : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2020-04-29 18:01:33.294[] [restartedMain] [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] 
+INFO : Initializing Spring embedded WebApplicationContext
+
+2020-04-29 18:01:33.295[] [restartedMain] [org.springframework.web.context.ContextLoader] 
+INFO : Root WebApplicationContext: initialization completed in 1366 ms
+
+2020-04-29 18:01:54.022[] [restartedMain] [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] 
+INFO : Initializing ExecutorService 'applicationTaskExecutor'
+
+2020-04-29 18:01:54.375[] [restartedMain] [o.s.b.d.autoconfigure.OptionalLiveReloadServer] 
+INFO : LiveReload server is running on port 35729
+
+2020-04-29 18:01:54.400[] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] 
+INFO : Starting ProtocolHandler ["http-nio-8012"]
+
+2020-04-29 18:01:54.433[] [restartedMain] [o.s.boot.web.embedded.tomcat.TomcatWebServer] 
+INFO : Tomcat started on port(s): 8012 (http) with context path ''
+
+2020-04-29 18:01:54.437[] [restartedMain] [com.shu.crm.CrmApplication] 
+INFO : Started CrmApplication in 43.012 seconds (JVM running for 48.642)
+
+2020-04-29 18:01:59.760[] [http-nio-8012-exec-1] [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] 
+INFO : Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2020-04-29 18:01:59.761[] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet] 
+INFO : Initializing Servlet 'dispatcherServlet'
+
+2020-04-29 18:01:59.766[] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet] 
+INFO : Completed initialization in 5 ms
+
+2020-04-29 18:01:59.866[] [http-nio-8012-exec-1] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Starting...
+
+2020-04-29 18:01:59.979[] [http-nio-8012-exec-1] [com.zaxxer.hikari.HikariDataSource] 
+INFO : HikariPool-1 - Start completed.

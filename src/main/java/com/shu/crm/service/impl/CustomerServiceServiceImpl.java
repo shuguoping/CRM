@@ -5,7 +5,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import com.shu.crm.dao.CustomerServiceDao;
+import com.shu.crm.mappers.CustomerServiceMapper;
 import com.shu.crm.entity.CustomerService;
 import com.shu.crm.service.CustomerServiceService;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 public class CustomerServiceServiceImpl implements CustomerServiceService {
 
 	@Resource
-	private CustomerServiceDao customerServiceDao;
+	private CustomerServiceMapper customerServiceDao;
 
 	@Override
 	public int add(CustomerService customerService) {

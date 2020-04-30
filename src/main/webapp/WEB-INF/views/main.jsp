@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -18,19 +19,20 @@
 		if($("#tabs").tabs("exists",text)){
 			$("#tabs").tabs("select",text);
 		}else{
-			var content="<iframe frameborder=0 scrolling='auto' style='width:100%;height:100%' src='${pageContext.request.contextPath}/page/"+url+"'></iframe>";
+ 			var content = "<iframe  id='if' frameborder=0 scrolling='auto' style='width:100%;height:100%' src='/Jump?Jump="+url+"' ></iframe>";
 			$("#tabs").tabs("add",{
 				title:text,
 				iconCls:iconCls,
 				closable:true,
 				content:content
 			});
+
 		}
 	}
 
 	function openPasswordModifyDialog(){
 		$("#dlg").dialog("open").dialog("setTitle","修改密码");
-		url="${pageContext.request.contextPath}/user/modifyPassword.do?id=${currentUser.id}";
+		url="${pageContext.request.contextPath}/user/modifyPassword?id=${currentUser.id}";
 	}
 	
 	function modifyPassword(){
@@ -81,7 +83,7 @@
 	function logout(){
 		$.messager.confirm("系统提示","您确定要退出系统吗？",function(r){
 			if(r){
-				window.location.href='${pageContext.request.contextPath}/user/logout.do';
+				window.location.href='${pageContext.request.contextPath}/user/logout';
 			} 
 		 });
 	}
@@ -110,26 +112,27 @@
 <div region="west" style="width: 200px" title="导航菜单" split="true">
 	<div class="easyui-accordion" data-options="fit:true,border:false">
 		<div title="营销管理" data-options="selected:true,iconCls:'icon-yxgl'" style="padding: 10px">
-			<a href="javascript:openTab('营销机会管理','saleChanceManage.jsp','icon-yxjhgl')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-yxjhgl'" style="width: 150px">营销机会管理</a>
-			<a href="javascript:openTab('客户开发计划','cusdevplanManage.jsp','icon-khkfjh')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khkfjh'" style="width: 150px">客户开发计划</a>
+			<a href="javascript:openTab('营销机会管理','saleChanceManage','icon-yxjhgl')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-yxjhgl'" style="width: 150px">营销机会管理</a>
+			<a href="javascript:openTab('客户开发计划','cusdevplanManage','icon-khkfjh')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khkfjh'" style="width: 150px">客户开发计划</a>
 		</div>
 		<div title="客户管理"  data-options="iconCls:'icon-khgl'" style="padding:10px;">
-			<a href="javascript:openTab('客户信息管理','customerManage.jsp','icon-khxxgl')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khxxgl'" style="width: 150px;">客户信息管理</a>
-			<a href="javascript:openTab('客户流失管理','customerLossManage.jsp','icon-khlsgl')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khlsgl'" style="width: 150px;">客户流失管理</a>
+			<a href="javascript:openTab('客户信息管理','customerManage','icon-khxxgl')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khxxgl'" style="width: 150px;">客户信息管理</a>
+			<a href="javascript:openTab('客户流失管理','customerLossManage','icon-khlsgl')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khlsgl'" style="width: 150px;">客户流失管理</a>
 		</div>
 		<div title="服务管理" data-options="iconCls:'icon-fwgl'" style="padding:10px">
-			<a href="javascript:openTab('服务创建','customerServiceCreate.jsp','icon-fwcj')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-fwcj'" style="width: 150px;">服务创建</a>
-			<a href="javascript:openTab('服务分配','customerServiceAssign.jsp','icon-fwfp')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-fwfp'" style="width: 150px;">服务分配</a>
-			<a href="javascript:openTab('服务处理','customerServiceProce.jsp','icon-fwcl')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-fwcl'" style="width: 150px;">服务处理</a>
-			<a href="javascript:openTab('服务反馈','customerServiceFeedback.jsp','icon-fwfk')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-fwfk'" style="width: 150px;">服务反馈</a>
-			<a href="javascript:openTab('服务归档','customerServiceFile.jsp','icon-fwgd')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-fwgd'" style="width: 150px;">服务归档</a>
+			<a href="javascript:openTab('服务创建','customerServiceCreate','icon-fwcj')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-fwcj'" style="width: 150px;">服务创建</a>
+			<a href="javascript:openTab('服务分配','customerServiceAssign','icon-fwfp')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-fwfp'" style="width: 150px;">服务分配</a>
+			<a href="javascript:openTab('服务处理','customerServiceProce','icon-fwcl')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-fwcl'" style="width: 150px;">服务处理</a>
+			<a href="javascript:openTab('服务反馈','customerServiceFeedback','icon-fwfk')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-fwfk'" style="width: 150px;">服务反馈</a>
+			<a href="javascript:openTab('服务归档','customerServiceFile','icon-fwgd')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-fwgd'" style="width: 150px;">服务归档</a>
 		</div>
 		<div title="统计报表"  data-options="iconCls:'icon-tjbb'" style="padding:10px">
-			<a href="javascript:openTab('客户贡献分析','khgxfx.jsp','icon-khgxfx')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khgxfx'" style="width: 150px;">客户贡献分析</a>
-			<a href="javascript:openTab('客户构成分析','khgcfx.jsp','icon-khgcfx')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khgcfx'" style="width: 150px;">客户构成分析</a>
-			<a href="javascript:openTab('客户服务分析','khfwfx.jsp','icon-khfwfx')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khfwfx'" style="width: 150px;">客户服务分析</a>
-			<a href="javascript:openTab('客户流失分析','khlsfx.jsp','icon-khlsfx')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khlsfx'" style="width: 150px;">客户流失分析</a>
+			<a href="javascript:openTab('客户贡献分析','khgxfx','icon-khgxfx')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khgxfx'" style="width: 150px;">客户贡献分析</a>
+			<a href="javascript:openTab('客户构成分析','khgcfx','icon-khgcfx')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khgcfx'" style="width: 150px;">客户构成分析</a>
+			<a href="javascript:openTab('客户服务分析','khfwfx','icon-khfwfx')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khfwfx'" style="width: 150px;">客户服务分析</a>
+			<a href="javascript:openTab('客户流失分析','khlsfx','icon-khlsfx')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-khlsfx'" style="width: 150px;">客户流失分析</a>
 		</div>
+
 		<div title="基础数据管理"  data-options="iconCls:'icon-jcsjgl'" style="padding:10px">
 			<a href="javascript:openTab('数据字典管理','dataDicManage.jsp','icon-sjzdgl')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-sjzdgl'" style="width: 150px;">数据字典管理</a>
 			<a href="javascript:openTab('产品信息查询','productSearch.jsp','icon-cpxxgl')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-cpxxgl'" style="width: 150px;">产品信息查询</a>
@@ -142,7 +145,9 @@
 	</div>
 </div>
 <div region="south" style="height: 25px;padding: 5px" align="center">
-	版本所有 xxxx
+	舒同学的测试版本V:1.0.1
+	<img src="images/fruit.jpg" alt="嘟嘟嘟1">
+
 </div>
 
 <div id="dlg" class="easyui-dialog" style="width:400px;height:250px;padding: 10px 20px"

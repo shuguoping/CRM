@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+logging:
+  config: classpath:log/logback-test.xml
+logback:
+  logdir: ./home/logs/crm
+  appname: crm
+

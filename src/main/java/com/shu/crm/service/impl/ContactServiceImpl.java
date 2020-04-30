@@ -1,49 +1,46 @@
 package com.shu.crm.service.impl;
 
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
-
-import com.shu.crm.dao.ContactDao;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.shu.crm.entity.Contact;
+import com.shu.crm.mappers.ContactMapper;
 import com.shu.crm.service.ContactService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Map;
+
+
 /**
  * 交往记录Service实现类
- * @author Administrator
  *
+ * @author Administrator
  */
-@Service("contactService")
-public class ContactServiceImpl implements ContactService {
+@Service
+public class ContactServiceImpl extends ServiceImpl<ContactMapper, Contact> implements ContactService {
 
-	@Resource
-	private ContactDao contactDao;
+    @Override
+    public List<Contact> find(Map<String, Object> map) {
+        return baseMapper.find(map);
+    }
 
-	@Override
-	public List<Contact> find(Map<String, Object> map) {
-		return contactDao.find(map);
-	}
+    @Override
+    public Long getTotal(Map<String, Object> map) {
+        return baseMapper.getTotal(map);
+    }
 
-	@Override
-	public Long getTotal(Map<String, Object> map) {
-		return contactDao.getTotal(map);
-	}
+    @Override
+    public int update(Contact contact) {
+        return baseMapper.update(contact);
+    }
 
-	@Override
-	public int update(Contact contact) {
-		return contactDao.update(contact);
-	}
+    @Override
+    public int add(Contact contact) {
+        return baseMapper.add(contact);
+    }
 
-	@Override
-	public int add(Contact contact) {
-		return contactDao.add(contact);
-	}
-
-	@Override
-	public int delete(Integer id) {
-		return contactDao.delete(id);
-	}
+    @Override
+    public int delete(Integer id) {
+        return baseMapper.delete(id);
+    }
 
 }
